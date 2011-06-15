@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2006 Nick Blundell.
+# Copyright (C) 2006-2011 Nick Blundell.
 # 
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -18,25 +18,5 @@
 # The GNU GPL is contained in /usr/doc/copyright/GPL on a Debian
 # system and in the file COPYING in the Linux kernel source.
 # 
-# test (test.py)
-# --------------
 #
-# Description:
-#
-#
-# Author       : Nick Blundell
-# Organisation : www.nickblundell.org.uk
-# Version Info : $Id: test.py 343 2006-10-17 10:22:12Z blundeln $
-#
-
-from nbdebug import *
-
-class MyClass1:
-  def __init__(self) :
-    debugOutput("Creating")
-  def f1(self) :
-    debugOutput("Running")
-
-debugOutput("Hello")
-myClass = MyClass1()
-myClass.f1()
+VERSION = "1.3"

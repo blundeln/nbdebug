@@ -20,10 +20,24 @@
 # 
 from distutils.core import setup
 
+from nbdebug import version
+
+# Note, use non-empty DISTUTILS_DEBUG env variable to debug distutils script.
+
 setup(
   name='nbdebug',
-  version='1.3',
-  packages=['nbdebug',],
+  version=version.VERSION,
+  author='Nick Blundell',
+  author_email='blundeln [AT] gmail [DOT] com',
+  url='http://www.nickblundell.org.uk',
   license='GPL',
+  description=open('README').read().split("\n")[0],
   long_description=open('README').read(),
+  requires = [
+    "python (< 3.0)",
+  ],
+  classifiers = [
+    "Topic :: Software Development :: Testing",
+  ],
+  packages=['nbdebug',],
 )
